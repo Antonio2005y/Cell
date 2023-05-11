@@ -1,56 +1,56 @@
 const e1=()=>{
-    Swal.fire('Any fool can use a computer')
+    Swal.fire('Cualquier persona puede usar una computadora la cuestion es que quiera aprender como usarla')
 }
 
 const e2=()=>{
     Swal.fire(
-        'The Internet?',
-        'That thing is still around?',
-        'question'
+        '¿Y el Internet?',
+        '¿Quien está ahi?',
+        '¿Pregunta?'
       )
 }
 
 const e3=()=>{
     Swal.fire({
-        icon: 'error',
-        title: 'Oops...',
-        text: 'Something went wrong!',
-        footer: '<a href="">Why do I have this issue?</a>'
+        icon: 'ERROR',
+        title: 'o nO...',
+        text: '¡Haber haber que paso!',
+        footer: '<a href="">¿Por qué tengo este problema?</a>'
       })
 }
-const e4=()=>{
+const e4=()=>{ 
     Swal.fire({
-        title: '<strong>HTML <u>example</u></strong>',
+        title: '<strong> Esto es un de <u> ejemplo de HTML </u></strong>',
         icon: 'info',
         html:
-          'You can use <b>bold text</b>, ' +
-          '<a href="//sweetalert2.github.io">links</a> ' +
-          'and other HTML tags',
+          'Se pueden usar enlaces de texto en <b> negrita </b>, ' +
+          '<a href="//sweetalert2.github.io">Enlace</a> ' +
+          'ademas de otras etiquetas HTML',
         showCloseButton: true,
         showCancelButton: true,
         focusConfirm: false,
         confirmButtonText:
-          '<i class="fa fa-thumbs-up"></i> Great!',
-        confirmButtonAriaLabel: 'Thumbs up, great!',
+          '<i class="fa fa-thumbs-up"></i> ¡Excelente!',
+        confirmButtonAriaLabel: 'Ta bien',
         cancelButtonText:
           '<i class="fa fa-thumbs-down"></i>',
-        cancelButtonAriaLabel: 'Thumbs down'
+        cancelButtonAriaLabel: 'Ta MAl'
       })
     }
 
 const e5=()=>{
     Swal.fire({
-        title: 'Do you want to save the changes?',
+        title: '¿Quieres guardar los cambios?',
         showDenyButton: true,
         showCancelButton: true,
-        confirmButtonText: 'Save',
-        denyButtonText: `Don't save`,
+        confirmButtonText: 'Guardar',
+        denyButtonText: `No guardar`,
       }).then((result) => {
         /* Read more about isConfirmed, isDenied below */
         if (result.isConfirmed) {
-          Swal.fire('Saved!', '', 'success')
+          Swal.fire('Bien Guardado', '', 'Guardado')
         } else if (result.isDenied) {
-          Swal.fire('Changes are not saved', '', 'info')
+          Swal.fire('No se guardan los cambios', '', 'mas detalles')
         }
       })
 }
